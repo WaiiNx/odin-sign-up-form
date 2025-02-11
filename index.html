@@ -13,7 +13,7 @@
     <main>
         <div class="left-section">
             <div class="logo-div">
-                <img src="images/odin-lined.png">
+                <img src="images/odin-lined.png" alt="Odin logo">
                 <h1>ODIN</h1>
             </div>
             <p class="image-credit">
@@ -25,8 +25,80 @@
                 <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>
             </p>
         </div>
-        <div id="right-section">
-
+        <div class="right-section">
+            <div class="top-text">
+                <h2 class="top-half-text">
+                    This is not a real online service!
+                    You know you need something like this in your life to 
+                    help you realize your deepest dreams. Sign up <i>now</i> to get started.
+                </h2>
+                <h2 class="bottom-half-text">You <i>know</i> you want to.</h2>
+            </div>
+            <div class="form-content">
+                <h2 class="top-form-text">Let's do this!</h2>
+                <form id="signup-form" method="post">
+                    <div class="name-section">
+                        <div class="first-name">
+                            <div>
+                                <label for="first-name">First Name *</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="text" id="first-name" name="first-name" minlength="2" maxlength="20" placeholder="John" required>
+                            </div>
+                        </div>
+                        <div class="last-name">
+                            <div>
+                                <label for="last-name">Last Name *</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="text" id="last-name" name="last-name" minlength="2" maxlength="20" placeholder="Doe" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-section">
+                        <div class="email">
+                            <div>
+                                <label for="email">Email *</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                            </div>
+                        </div>
+                        <div class="phonenumber">
+                            <div>
+                                <label for="phonenumber">Phone Number</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9 /-]+{10,15}" placeholder="0176 12345678">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="password-section">
+                        <div class="password">
+                            <div>
+                                <label for="password">Password *</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="password" id="password" name="password" minlength="4" required>
+                            </div>
+                        </div>
+                        <div class="confirm-password">
+                            <div>
+                                <label for="confirm-password">Confirm Password *</label>
+                            </div>
+                            <div class="input-div">
+                                <input type="password" id="confirm-password" name="confirm-password" minlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="create-account">
+                <button type="submit" form="signup-form">Create Account</button>
+            </div>
+            <div class="bottom-text">
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
         </div>
     </main>
     <footer>
